@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ header span {
 nav {
     display: none;
     flex-direction: column;
-    background: #5f6e80;
+    background: #34495e;
 }
 
 nav.open {
@@ -44,7 +44,8 @@ nav a {
 
 nav a:hover,
 .active {
-    background: #a7c6f0;
+    background: #2c3e50;
+    color: white;
 }
 
 main {
@@ -59,13 +60,14 @@ section {
 }
 
 .buttons button {
-    margin: .3rem;
-    padding: .5rem 1rem;
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .course-card {
     padding: 1rem;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     border-radius: 6px;
     background: white;
     border: 1px solid #ccc;
@@ -76,7 +78,7 @@ section {
 }
 
 footer {
-    background: #b4ccf1;
+    background: #4c6487;
     color: white;
     text-align: center;
     padding: 1rem;
