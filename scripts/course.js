@@ -20,7 +20,7 @@ function displayCourses(courseList) {
             div.classList.add("completed");
         }
 
-        div.innerHTML = course.code;
+        div.textContent = course.code;
         courseContainer.appendChild(div);
     });
 

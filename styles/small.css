@@ -2,10 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8fafc;
+    color: #1e293b;
 }
 
 header {
-    background: #4c6487;
+    background: #0f172a;
     color: white;
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@ header span {
 nav {
     display: none;
     flex-direction: column;
-    background: #34495e;
+    background: #1e293b;
 }
 
 nav.open {
@@ -40,12 +42,13 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1rem;
+    transition: background 0.3s ease;
 }
 
 nav a:hover,
 .active {
-    background: #2c3e50;
-    color: white;
+    background: #334155;
+    color: #ffffff;
 }
 
 main {
@@ -53,32 +56,44 @@ main {
 }
 
 section {
-    background: #f4f4f4;
+    background: white;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .buttons button {
     margin: 0.3rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+    background: #1d4ed8;
 }
 
 .course-card {
     padding: 1rem;
     margin: 0.5rem 0;
     border-radius: 6px;
-    background: white;
-    border: 1px solid #ccc;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
 }
 
 .completed {
-    background: #c8e6c9;
+    background: #dcfce7;
+    border-left: 5px solid #16a34a;
 }
 
 footer {
-    background: #4c6487;
+    background: #0f172a;
     color: white;
     text-align: center;
     padding: 1rem;
