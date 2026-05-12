@@ -1,15 +1,79 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapheal Akwasi Agyapong | WDD 231</title>
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="description" content="Course home page for WDD231">
+    <meta name="author" content="Rapheal Akwasi Agyapong">
+
+    <title>WDD231 Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>Rapheal Akwasi Agyapong</h1>
-    <p>My name is Rapheal Akwasi Agyapong.</p>
-    <p>I am a student at Portland State University, pursuing a degree in Computer Science.</p>
-    <p>I have a passion for technology and programming, and I am excited to learn more about web development in this course.</p>
+
+<header>
+    <img src="images/logo.svg" alt="Website Logo" width="50">
+    <span>Rapheal Akwasi Agyapong</span>
+    <button id="menu">☰</button>
+</header>
+
+<nav id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="final/index.html">Final</a>
+</nav>
+
+<main>
+    <h1>Home</h1>
+
+    <section>
+        <img src="images/profile.jpg" alt="Profile Picture" width="150">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Technology and Software Development student
+            passionate about web development, robotics, and technology education.
+        </p>
+    </section>
+
+    <section>
+        <h2>Student Information</h2>
+        <p>BYU-Idaho Software Development Student</p>
+        <p>Accra Institute of Technology Student</p>
+        <p>Location: Ghana</p>
+    </section>
+
+    <section>
+        <h2>Web Certificate Courses</h2>
+
+        <div class="buttons">
+            <button id="all">All Courses</button>
+            <button id="wdd">WDD Courses</button>
+            <button id="cse">CSE Courses</button>
+        </div>
+
+        <div id="courses"></div>
+
+        <p id="credits"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="socials">
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://linkedin.com/">LinkedIn</a>
+        <a href="https://twitter.com/">Twitter</a>
+    </div>
+
+    <p id="copyright"></p>
+    <p id="lastModified"></p>
+</footer>
+
 </body>
 </html>

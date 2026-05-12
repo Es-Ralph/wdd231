@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4c6487;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #5f6e80;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover,
+.active {
+    background: #a7c6f0;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background: #f4f4f4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.buttons button {
+    margin: .3rem;
+    padding: .5rem 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.completed {
+    background: #c8e6c9;
+}
+
+footer {
+    background: #b4ccf1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
