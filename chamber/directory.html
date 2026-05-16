@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accra Chamber of Commerce directory page">
+
+    <meta name="description" content="Accra Chamber of Commerce business directory showcasing registered companies, services, and members across Accra, Ghana.">
     <meta name="author" content="Rapheal Akwasi Agyapong">
 
-    <meta property="og:title" content="Accra Chamber Directory">
-    <meta property="og:description" content="Business directory for Accra Chamber of Commerce">
-    <meta property="og:image" content="images/logo.png">
+    <meta property="og:title" content="Accra Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore verified businesses, services, and organizations registered with the Accra Chamber of Commerce in Ghana.">
+    <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/logo.png">
     <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/">
+
+    <!-- Google Fonts (REQUIRED FIX) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico">
 
@@ -19,12 +25,13 @@
 
     <script defer src="scripts/directory.js"></script>
 
-    <title>Chamber Directory</title>
+    <title>Accra Chamber Directory</title>
 </head>
+
 <body>
 
 <header>
-    <h1>Accra Chamber of Commerce</h1>
+    <h2>Accra Chamber of Commerce</h2>
     <button id="menu">☰</button>
 
     <nav>
@@ -38,7 +45,8 @@
 </header>
 
 <main>
-    <h2>Business Directory</h2>
+    <!-- FIX: H1 MUST be inside main -->
+    <h1>Business Directory</h1>
 
     <div class="view-buttons">
         <button id="grid">Grid View</button>

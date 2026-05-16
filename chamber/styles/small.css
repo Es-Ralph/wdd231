@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
 }
 
@@ -39,3 +39,4 @@ img {
     width: 100%;
     max-width: 200px;
 }
+

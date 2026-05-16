@@ -1,12 +1,18 @@
 const membersContainer = document.querySelector("#members");
 
 async function getMembers() {
-    const response = await fetch("data/members.json");
-    const data = await response.json();
-    displayMembers(data);
+    try {
+        const response = await fetch("data/members.json");
+        const members = await response.json();
+        displayMembers(members);
+    } catch (error) {
+        console.error("Error loading members:", error);
+    }
 }
 
 function displayMembers(members) {
+    membersContainer.innerHTML = "";
+
     members.forEach(member => {
         const card = document.createElement("section");
 
@@ -24,6 +30,7 @@ function displayMembers(members) {
 
 getMembers();
 
+// View toggles
 document.querySelector("#grid").addEventListener("click", () => {
     membersContainer.className = "grid";
 });
@@ -32,6 +39,7 @@ document.querySelector("#list").addEventListener("click", () => {
     membersContainer.className = "list";
 });
 
+// Footer info
 document.querySelector("#year").textContent =
 `© ${new Date().getFullYear()}`;
 
