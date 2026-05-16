@@ -1,0 +1,58 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "12 Oxford Street, Accra",
+    "phone": "+233 24 111 1111",
+    "website": "https://technova.com",
+    "image": "business1.webp",
+    "membership": 3
+  },
+  {
+    "name": "Accra Digital Hub",
+    "address": "5 Ring Road, Accra",
+    "phone": "+233 24 222 2222",
+    "website": "https://digitalhub.com",
+    "image": "business2.webp",
+    "membership": 2
+  },
+  {
+    "name": "Smart Finance Ltd",
+    "address": "Airport City, Accra",
+    "phone": "+233 24 333 3333",
+    "website": "https://smartfinance.com",
+    "image": "business3.webp",
+    "membership": 1
+  },
+  {
+    "name": "Green Energy Ghana",
+    "address": "Tema Station, Accra",
+    "phone": "+233 24 444 4444",
+    "website": "https://greenenergy.com",
+    "image": "business4.webp",
+    "membership": 2
+  },
+  {
+    "name": "Blue Ocean Logistics",
+    "address": "Spintex Road, Accra",
+    "phone": "+233 24 555 5555",
+    "website": "https://blueocean.com",
+    "image": "business5.webp",
+    "membership": 3
+  },
+  {
+    "name": "NextGen Robotics",
+    "address": "East Legon, Accra",
+    "phone": "+233 24 666 6666",
+    "website": "https://nextgenrobotics.com",
+    "image": "business6.webp",
+    "membership": 1
+  },
+  {
+    "name": "EduTech Academy",
+    "address": "Madina, Accra",
+    "phone": "+233 24 777 7777",
+    "website": "https://edutech.com",
+    "image": "business7.webp",
+    "membership": 2
+  }
+]
