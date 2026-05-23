@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER + FOOTER */
+/* Header & Footer */
 header, footer {
     background: #003366;
     color: white;
@@ -12,7 +12,7 @@ header, footer {
     padding: 1rem;
 }
 
-/* NAV */
+/* Navigation */
 nav {
     display: none;
 }
@@ -24,6 +24,7 @@ nav.open {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +39,7 @@ nav a:hover,
     text-decoration: underline;
 }
 
-/* DESKTOP NAV */
+/* Desktop Navigation */
 @media (min-width: 768px) {
     nav {
         display: block;
@@ -55,14 +56,14 @@ nav a:hover,
     }
 }
 
-/* GRID */
+/* Grid Layout */
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
-/* LIST */
+/* List Layout */
 #members.list {
     display: block;
 }
@@ -71,7 +72,7 @@ nav a:hover,
     display: none;
 }
 
-/* CARD */
+/* Card Style */
 .card {
     border: 1px solid #ccc;
     padding: 1rem;
