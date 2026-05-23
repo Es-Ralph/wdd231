@@ -16,7 +16,7 @@ async function getMembers() {
     }
 }
 
-// DISPLAY DATA
+// DISPLAY MEMBERS
 function displayMembers(members) {
     membersContainer.innerHTML = "";
 
@@ -34,14 +34,11 @@ function displayMembers(members) {
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
 
-            <p>
-                Website: 
-                <a href="${member.website}" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                   Visit Website
-                </a>
-            </p>
+            <a href="${member.website}" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               Visit Website
+            </a>
         `;
 
         membersContainer.appendChild(card);
