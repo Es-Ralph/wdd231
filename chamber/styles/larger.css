@@ -1,11 +1,31 @@
+/* =======================
+   RESPONSIVE (DESKTOP)
+======================= */
 @media screen and (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
+
+    /* NAVIGATION */
+    nav {
+        display: block;
     }
 
     nav ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        gap: 2rem;
+        gap: 2rem; /* unified spacing */
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* DIRECTORY GRID */
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* SPOTLIGHT */
+    .spotlight {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -1,18 +1,38 @@
+/* =======================
+   GENERAL
+======================= */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
-/* Header & Footer */
-header, footer {
+main {
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* =======================
+   HEADER & FOOTER
+======================= */
+header,
+footer {
     background: #003366;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-/* Navigation */
+
+/* =======================
+   NAVIGATION (MOBILE FIRST)
+======================= */
 nav {
     display: none;
 }
@@ -23,8 +43,9 @@ nav.open {
 
 nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
 }
@@ -39,31 +60,58 @@ nav a:hover,
     text-decoration: underline;
 }
 
-/* Desktop Navigation */
-@media (min-width: 768px) {
-    nav {
-        display: block;
-    }
 
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #menu {
-        display: none;
-    }
+/* =======================
+   HERO SECTION
+======================= */
+.hero {
+    position: relative;
 }
 
-/* Grid Layout */
+.hero img {
+    width: 100%;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* =======================
+   EVENTS + WEATHER
+======================= */
+.events,
+.weather {
+    margin: 1rem 0;
+}
+
+
+/* =======================
+   SPOTLIGHT SECTION
+======================= */
+.spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* =======================
+   DIRECTORY GRID/LIST
+======================= */
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
-/* List Layout */
 #members.list {
     display: block;
 }
@@ -72,7 +120,10 @@ nav a:hover,
     display: none;
 }
 
-/* Card Style */
+
+/* =======================
+   CARD DESIGN
+======================= */
 .card {
     border: 1px solid #ccc;
     padding: 1rem;
@@ -81,12 +132,4 @@ nav a:hover,
     background: #f9f9f9;
 }
 
-main {
-    padding: 1rem;
-}
 
-img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
