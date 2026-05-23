@@ -9,21 +9,25 @@
     <meta name="description" content="Welcome to the Accra Chamber of Commerce. Explore local businesses, events, weather updates, and join today.">
     <meta name="author" content="Rapheal Akwasi Agyapong">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Accra Chamber Home Page">
+    <!-- ✅ Open Graph -->
+    <meta property="og:title" content="Accra Chamber of Commerce Home Page Directory">
     <meta property="og:description" content="Discover businesses, events, and opportunities with the Accra Chamber of Commerce.">
     <meta property="og:image" content="https://es-ralph.github.io/wdd231/chamber/images/logo.png">
     <meta property="og:url" content="https://es-ralph.github.io/wdd231/chamber/index.html">
 
-    <!-- Google Fonts -->
+    <!-- ✅ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- ✅ CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- ✅ JS -->
     <script defer src="scripts/home.js"></script>
 </head>
 
@@ -31,7 +35,7 @@
 
 <header>
     <h2>Accra Chamber of Commerce</h2>
-    <button id="menu" aria-label="Open navigation">☰</button>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
 
     <nav>
         <ul>
@@ -45,31 +49,34 @@
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
-    <img src="images/hero.webp" alt="Accra business district">
-    <a href="join.html" class="cta">Join the Chamber</a>
-</section>
+    <!-- ✅ REQUIRED H1 -->
+    <h1>Accra Chamber of Commerce</h1>
 
-<!-- EVENTS -->
-<section class="events">
-    <h2>Current Events</h2>
-    <p>Join us for our monthly business networking meeting on June 10 at Accra Conference Center.</p>
-</section>
+    <!-- ✅ HERO -->
+    <section class="hero">
+        <img src="images/hero.webp" alt="Accra business district">
+        <a href="join.html" class="cta">Join the Chamber</a>
+    </section>
 
-<!-- WEATHER -->
-<section class="weather">
-    <h2>Weather</h2>
-    <p id="temp"></p>
-    <p id="desc"></p>
-    <div id="forecast"></div>
-</section>
+    <!-- ✅ EVENTS -->
+    <section class="events">
+        <h2>Current Events</h2>
+        <p>Join us for our monthly business networking meeting on June 10 at Accra Conference Center.</p>
+    </section>
 
-<!-- SPOTLIGHT -->
-<section class="spotlight">
-    <h2>Business Spotlights</h2>
-    <div id="spotlights"></div>
-</section>
+    <!-- ✅ WEATHER -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <p id="temp"></p>
+        <p id="desc"></p>
+        <div id="forecast"></div>
+    </section>
+
+    <!-- ✅ SPOTLIGHT -->
+    <section class="spotlight">
+        <h2>Business Spotlights</h2>
+        <div id="spotlights"></div>
+    </section>
 
 </main>
 
