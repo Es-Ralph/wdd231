@@ -1,147 +1,323 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Join Accra Chamber of Commerce | Membership Application</title>
+<meta charset="UTF-8">
 
-    <meta name="description"
-        content="Join the Accra Chamber of Commerce to access business opportunities, networking events, and professional growth in Ghana's business community.">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Rapheal Akwasi Agyapong">
+<title>Join Accra Chamber of Commerce</title>
 
-    <link rel="icon" href="images/favicon.ico">
+<meta name="description"
+content="Join the Accra Chamber of Commerce to access business opportunities, events, and professional growth.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="author"
+content="Rapheal Akwasi Agyapong">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon"
+href="images/favicon.ico">
 
-    <meta property="og:title" content="Join Accra Chamber of Commerce Membership">
-    <meta property="og:description"
-        content="Become a member of the Accra Chamber and unlock networking, visibility, and growth opportunities.">
-    <meta property="og:image"
-        content="https://es-ralph.github.io/wdd231/chamber/images/og-image.webp">
-    <meta property="og:url" content="https://es-ralph.github.io/wdd231/chamber/join.html">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/join.css">
-    <link rel="stylesheet" href="styles/largerjoin.css">
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-    <script src="scripts/join.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+rel="stylesheet">
+
+<meta property="og:title"
+content="Join the Accra Chamber of Commerce Today">
+
+<meta property="og:description"
+content="Become a member and grow your business network in Accra today.">
+
+<meta property="og:image"
+content="https://es-ralph.github.io/wdd231/chamber/images/og-image.webp">
+
+<meta property="og:url"
+content="https://es-ralph.github.io/wdd231/chamber/join.html">
+
+<link rel="stylesheet"
+href="styles/base.css">
+
+<link rel="stylesheet"
+href="styles/join.css">
+
+<link rel="stylesheet"
+href="styles/largerjoin.css">
+
+<script src="scripts/join.js" defer></script>
+
 </head>
+
 
 <body>
 
 <header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-    </nav>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="directory.html">Directory</a>
+
+<a href="join.html">Join</a>
+
+</nav>
+
 </header>
 
 <main>
-    <h1>Join Accra Chamber of Commerce</h1>
 
-    <div class="container">
+<h1>Join the Chamber</h1>
 
-        <form method="get" action="thankyou.html">
+<div class="container">
 
-            <label for="fname">First Name</label>
-            <input id="fname" type="text" name="fname" required autocomplete="given-name" placeholder="John">
+<form method="get"
+action="thankyou.html">
 
-            <label for="lname">Last Name</label>
-            <input id="lname" type="text" name="lname" required autocomplete="family-name" placeholder="Doe">
+<label>
 
-            <label for="orgtitle">Organization Title</label>
-            <input id="orgtitle" type="text" name="orgtitle"
-                pattern="[A-Za-z\s\-]{7,}"
-                title="At least 7 alphabetic characters"
-                autocomplete="organization-title"
-                placeholder="CEO, Manager">
+First Name
 
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required autocomplete="email"
-                placeholder="example@email.com">
+<input
+type="text"
+name="fname"
+required
+title="Enter your first name"
+autocomplete="given-name"
+placeholder="John">
 
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel" name="phone" required autocomplete="tel"
-                placeholder="123-456-7890">
+</label>
 
-            <label for="business">Business Name</label>
-            <input id="business" type="text" name="business" required autocomplete="organization"
-                placeholder="Business Name">
+<label>
 
-            <label for="membership">Membership Level</label>
-            <select id="membership" name="membership" required>
-                <option value="">Select...</option>
-                <option value="np">NP Membership</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
+Last Name
 
-            <label for="description">Description</label>
-            <textarea id="description" name="description"></textarea>
+<input
+type="text"
+name="lname"
+required
+title="Enter your last name"
+autocomplete="family-name"
+placeholder="Doe">
 
-            <input type="hidden" id="timestamp" name="timestamp">
+</label>
 
-            <button type="submit">Submit Application</button>
+<label>
 
-        </form>
+Organization Title
 
-        <div class="cards">
-            <div class="card">
-                <h3>NP Membership</h3>
-                <button data-modal="np">Benefits</button>
-            </div>
+<input
+type="text"
+name="orgtitle"
+pattern="[A-Za-z\s\-]{7,}"
+title="At least 7 alphabetic characters"
+autocomplete="organization-title"
+placeholder="CEO, Manager">
 
-            <div class="card">
-                <h3>Bronze Membership</h3>
-                <button data-modal="bronze">Benefits</button>
-            </div>
+</label>
 
-            <div class="card">
-                <h3>Silver Membership</h3>
-                <button data-modal="silver">Benefits</button>
-            </div>
+<label>
 
-            <div class="card">
-                <h3>Gold Membership</h3>
-                <button data-modal="gold">Benefits</button>
-            </div>
-        </div>
+Email
 
-    </div>
+<input
+type="email"
+name="email"
+required
+title="Enter your email address"
+autocomplete="email"
+placeholder="example@email.com">
+
+</label>
+
+<label>
+
+Phone
+
+<input
+type="tel"
+name="phone"
+required
+title="Enter your mobile phone number"
+autocomplete="tel"
+placeholder="123-456-7890">
+
+</label>
+
+<label>
+
+Business Name
+
+<input
+type="text"
+name="business"
+required
+title="Enter your organization name"
+autocomplete="organization"
+placeholder="Business Name">
+
+</label>
+
+<label>
+
+Membership Level
+
+<select
+name="membership"
+required
+title="Choose membership level">
+
+<option value="">Select...</option>
+<option value="np">NP Membership</option>
+<option value="bronze">Bronze Membership</option>
+<option value="silver">Silver Membership</option>
+<option value="gold">Gold Membership</option>
+
+</select>
+
+</label>
+
+<label>
+
+Description
+
+<textarea
+name="description"
+title="Describe your organization"></textarea>
+
+</label>
+
+<input
+type="hidden"
+id="timestamp"
+name="timestamp">
+
+<button type="submit">
+
+Submit Application
+
+</button>
+
+</form>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>NP Membership</h3>
+
+<button data-modal="np">
+
+Benefits
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Bronze Membership</h3>
+
+<button data-modal="bronze">
+
+Benefits
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Silver Membership</h3>
+
+<button data-modal="silver">
+
+Benefits
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Gold Membership</h3>
+
+<button data-modal="gold">
+
+Benefits
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Accra Chamber</p>
+
+<p>&copy; 2026 Accra Chamber</p>
+
 </footer>
 
-<!-- Dialogs -->
 <dialog id="np">
-    <p>No-cost membership benefits.</p>
-    <button class="close">Close</button>
+
+<p>No-cost membership benefits.</p>
+
+<button class="close">
+
+Close
+
+</button>
+
 </dialog>
 
 <dialog id="bronze">
-    <p>Basic advertising opportunities.</p>
-    <button class="close">Close</button>
+
+<p>Basic advertising opportunities.</p>
+
+<button class="close">
+
+Close
+
+</button>
+
 </dialog>
 
 <dialog id="silver">
-    <p>Networking events and discounts.</p>
-    <button class="close">Close</button>
+
+<p>Networking events and discounts.</p>
+
+<button class="close">
+
+Close
+
+</button>
+
 </dialog>
 
 <dialog id="gold">
-    <p>Premium exposure and exclusive business benefits.</p>
-    <button class="close">Close</button>
+
+<p>Premium exposure and exclusive business benefits.</p>
+
+<button class="close">
+
+Close
+
+</button>
+
 </dialog>
 
 </body>
 </html>
+
