@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join Chamber</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="styles/join.css">
+  <!-- ✅ FIXED TITLE -->
+  <title>Join Accra Chamber of Commerce</title>
+
+  <!-- ✅ META -->
+  <meta name="description" content="Join the Accra Chamber of Commerce to access business opportunities, events, and professional growth.">
+  <meta name="author" content="Rapheal Akwasi Agyapong">
+
+  <!-- ✅ FAVICON -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- ✅ GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ OG TAGS -->
+  <meta property="og:title" content="Join Accra Chamber of Commerce">
+  <meta property="og:description" content="Become a member and grow your business network in Accra today.">
+  <meta property="og:image" content="https://es-ralph.github.io/wdd231/images/hero.webp">
+  <meta property="og:url" content="https://es-ralph.github.io/wdd231/chamber/join.html">
+
+  <!-- ✅ CSS (2 files required) -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
+
+  <!-- ✅ JS (fixed: defer added) -->
+  <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
 
 <header>
-  <h1>Chamber of Commerce</h1>
   <nav>
     <a href="index.html">Home</a> |
     <a href="directory.html">Directory</a> |
@@ -20,136 +44,100 @@
 </header>
 
 <main>
-<h2>Membership Application</h2>
+  <!-- ✅ FIXED H1 (inside main) -->
+  <h1>Join the Chamber</h1>
 
-<div class="container">
+  <div class="container">
 
-<form method="get" action="thankyou.html">
+    <form method="get" action="thankyou.html">
 
-<label>
-First Name
-<input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
-</label>
+      <label>First Name
+        <input type="text" name="fname" required title="First name" autocomplete="given-name">
+      </label>
 
-<label>
-Last Name
-<input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
-</label>
+      <label>Last Name
+        <input type="text" name="lname" required title="Last name" autocomplete="family-name">
+      </label>
 
-<label>
-Organization Title
-<input type="text" name="orgtitle"
-pattern="^[A-Za-z\s\-]{7,}$"
-title="At least 7 letters, spaces or hyphens"
-autocomplete="organization-title">
-</label>
+      <label>Organization Title
+        <input type="text" name="orgtitle"
+          pattern="^[A-Za-z\s\-]{7,}$"
+          title="At least 7 characters"
+          autocomplete="organization-title">
+      </label>
 
-<label>
-Email
-<input type="email" name="email" required
-title="Enter email"
-autocomplete="email"
-placeholder="example@email.com">
-</label>
+      <label>Email
+        <input type="email" name="email" required
+          autocomplete="email"
+          placeholder="example@email.com">
+      </label>
 
-<label>
-Phone
-<input type="tel" name="phone" required
-title="Enter phone"
-autocomplete="tel">
-</label>
+      <label>Phone
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
 
-<label>
-Business Name
-<input type="text" name="business" required
-title="Enter business name"
-autocomplete="organization">
-</label>
+      <label>Business Name
+        <input type="text" name="business" required autocomplete="organization">
+      </label>
 
-<label>
-Membership Level
-<select name="membership" required title="Select membership">
-  <option value="">Choose...</option>
-  <option value="np">NP Membership</option>
-  <option value="bronze">Bronze</option>
-  <option value="silver">Silver</option>
-  <option value="gold">Gold</option>
-</select>
-</label>
+      <label>Membership Level
+        <select name="membership" required>
+          <option value="">Select...</option>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+      </label>
 
-<label>
-Description
-<textarea name="description" title="Business description"></textarea>
-</label>
+      <label>Description
+        <textarea name="description"></textarea>
+      </label>
 
-<input type="hidden" id="timestamp" name="timestamp">
+      <input type="hidden" id="timestamp" name="timestamp">
 
-<input type="submit" value="Submit Application">
+      <input type="submit" value="Submit Application">
 
-</form>
+    </form>
 
-<!-- CARDS -->
-<div class="cards">
+    <!-- ✅ CARDS -->
+    <div class="cards">
 
-<div class="card">
-  <h3>NP Membership</h3>
-  <p>Free for nonprofits</p>
-  <button onclick="openModal('np')">Benefits</button>
-</div>
+      <div class="card">
+        <h3>NP Membership</h3>
+        <button data-modal="np">Benefits</button>
+      </div>
 
-<div class="card">
-  <h3>Bronze</h3>
-  <p>Basic exposure</p>
-  <button onclick="openModal('bronze')">Benefits</button>
-</div>
+      <div class="card">
+        <h3>Bronze</h3>
+        <button data-modal="bronze">Benefits</button>
+      </div>
 
-<div class="card">
-  <h3>Silver</h3>
-  <p>Event discounts</p>
-  <button onclick="openModal('silver')">Benefits</button>
-</div>
+      <div class="card">
+        <h3>Silver</h3>
+        <button data-modal="silver">Benefits</button>
+      </div>
 
-<div class="card">
-  <h3>Gold</h3>
-  <p>Premium benefits</p>
-  <button onclick="openModal('gold')">Benefits</button>
-</div>
+      <div class="card">
+        <h3>Gold</h3>
+        <button data-modal="gold">Benefits</button>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 </main>
 
 <footer>
-<p>&copy; 2026 Chamber</p>
+  <p>&copy; 2026 Accra Chamber</p>
 </footer>
 
-<!-- MODALS -->
-<dialog id="np">
-<h3>NP Membership</h3>
-<p>No fee for nonprofits.</p>
-<button onclick="closeModal('np')">Close</button>
-</dialog>
-
-<dialog id="bronze">
-<h3>Bronze</h3>
-<p>Basic advertising.</p>
-<button onclick="closeModal('bronze')">Close</button>
-</dialog>
-
-<dialog id="silver">
-<h3>Silver</h3>
-<p>Event discounts.</p>
-<button onclick="closeModal('silver')">Close</button>
-</dialog>
-
-<dialog id="gold">
-<h3>Gold</h3>
-<p>Top visibility + perks.</p>
-<button onclick="closeModal('gold')">Close</button>
-</dialog>
-
-<script src="scripts/join.js"></script>
+<!-- ✅ MODALS -->
+<dialog id="np"><p>No cost membership.</p><button class="close">Close</button></dialog>
+<dialog id="bronze"><p>Basic advertising.</p><button class="close">Close</button></dialog>
+<dialog id="silver"><p>Events and discounts.</p><button class="close">Close</button></dialog>
+<dialog id="gold"><p>Premium benefits.</p><button class="close">Close</button></dialog>
 
 </body>
 </html>
+``
