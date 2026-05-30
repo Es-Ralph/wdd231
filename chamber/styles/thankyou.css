@@ -1,0 +1,16 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+}
