@@ -12,15 +12,15 @@
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (CORRECT) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Join the Accra Chamber of Commerce Today">
   <meta property="og:description" content="Become a member and grow your business network in Accra today.">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630">
+  <meta property="og:image" content="https://es-ralph.github.io/wdd231/images/og-image.webp">
   <meta property="og:url" content="https://es-ralph.github.io/wdd231/chamber/join.html">
 
   <!-- CSS -->
@@ -50,18 +50,19 @@
     <form method="get" action="thankyou.html">
 
       <label>First Name
-        <input type="text" name="fname" required title="First name" autocomplete="given-name">
+        <input type="text" name="fname" required title="First name" autocomplete="given-name" placeholder="john">
       </label>
 
       <label>Last Name
-        <input type="text" name="lname" required title="Last name" autocomplete="family-name">
+        <input type="text" name="lname" required title="Last name" autocomplete="family-name" placeholder="doe">
       </label>
 
       <label>Organization Title
         <input type="text" name="orgtitle"
           pattern="^[A-Za-z\s\-]{7,}$"
           title="At least 7 characters"
-          autocomplete="organization-title">
+          autocomplete="organization-title"
+          placeholder="CEO, Manager, etc.">
       </label>
 
       <label>Email
@@ -71,11 +72,11 @@
       </label>
 
       <label>Phone
-        <input type="tel" name="phone" required autocomplete="tel">
+        <input type="tel" name="phone" required autocomplete="tel" placeholder="123-456-7890">
       </label>
 
       <label>Business Name
-        <input type="text" name="business" required autocomplete="organization">
+        <input type="text" name="business" required autocomplete="organization" placeholder="6 Alert">
       </label>
 
       <label>Membership Level
