@@ -3,7 +3,7 @@ export const places = [
     name: "Accra Arts Centre",
     address: "Castle Rd, Accra, Ghana",
     description: "A vibrant cultural hub showcasing Ghanaian crafts, textiles, and performances.",
-    image: "images/art-centre.webp"
+    image: "images/art.webp"
   },
   {
     name: "Kwame Nkrumah Mausoleum",

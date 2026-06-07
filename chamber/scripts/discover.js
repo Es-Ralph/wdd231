@@ -3,9 +3,9 @@ import { places } from "../data/places.mjs";
 const cardsContainer = document.querySelector("#cards");
 const visitMessage = document.querySelector("#visitMessage");
 
-// ==========================
-// LOCALSTORAGE VISIT LOGIC
-// ==========================
+/* =========================
+   VISIT MESSAGE LOGIC
+========================= */
 
 const now = Date.now();
 const lastVisit = localStorage.getItem("lastVisit");
@@ -28,13 +28,11 @@ if (!lastVisit) {
 }
 
 visitMessage.textContent = message;
-
-// update storage
 localStorage.setItem("lastVisit", now);
 
-// ==========================
-// RENDER CARDS
-// ==========================
+/* =========================
+   BUILD CARDS (ALL PLACES)
+========================= */
 
 places.forEach((place) => {
   const card = document.createElement("div");
@@ -42,11 +40,19 @@ places.forEach((place) => {
 
   card.innerHTML = `
     <h2>${place.name}</h2>
+
     <figure>
-      <img src="${place.image}" alt="${place.name}" loading="lazy">
+      <img 
+        src="${place.image}" 
+        alt="${place.name}" 
+        loading="lazy"
+      >
     </figure>
+
     <address>${place.address}</address>
+
     <p>${place.description}</p>
+
     <button>Learn More</button>
   `;
 

@@ -6,13 +6,12 @@
 
   <title>Discover Accra Chamber</title>
 
-  <!-- SEO -->
   <meta name="description" content="Discover the Accra Chamber of Commerce, its mission, and how it supports businesses in Ghana.">
   <meta name="author" content="Rapheal Akwasi Agyapong">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Discover the Accra Chamber of Commerce">
-  <meta property="og:description" content="Learn about the Accra Chamber of Commerce, its mission, and how it supports businesses in Ghana.">
+  <meta property="og:description" content="Learn about the Accra Chamber of Commerce and its support for businesses in Ghana.">
   <meta property="og:image" content="https://es-ralph.github.io/wdd231/chamber/images/og-image.webp">
   <meta property="og:url" content="https://es-ralph.github.io/wdd231/chamber/discover.html">
 
@@ -21,53 +20,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/discover.css">
   <link rel="stylesheet" href="css/largerdiscover.css">
 
-  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
-
-  <script src="js/discover.js" defer></script>
-
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div class="container">
-      <h1>Accra Chamber of Commerce</h1>
+<header>
+  <h1>Accra Chamber of Commerce</h1>
 
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="discover.html" class="active" aria-current="page">Discover</a>
-        <a href="join.html">Join</a>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html" class="active">Discover</a>
+    <a href="join.html">Join</a>
+  </nav>
+</header>
 
-  <!-- ================= MAIN ================= -->
-  <main>
+<main>
 
-    <!-- Visit Message (localStorage) -->
-    <section id="visitMessage" class="visit-message" aria-live="polite"></section>
+  <section id="visitMessage" class="visit-message"></section>
 
-    <!-- Cards Section -->
-    <section id="cards" class="cards" aria-label="Discover places in Accra">
-      <!-- JS injects cards here -->
-    </section>
+  <section id="cards" class="cards"></section>
 
-  </main>
+</main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <p>&copy; 2026 Accra Chamber of Commerce. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2026 Accra Chamber of Commerce</p>
+</footer>
 
-  <!-- ================= SCRIPT ================= -->
-  <script type="module" src="js/discover.js"></script>
+<!-- ONLY ONE SCRIPT -->
+<script type="module" src="scripts/discover.js"></script>
 
 </body>
 </html>
