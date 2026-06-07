@@ -1,0 +1,32 @@
+
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-areas:
+      "c1 c1 c2 c3"
+      "c4 c5 c5 c6"
+      "c7 c7 c8 c8";
+  }
+
+  .card:nth-child(1) { grid-area: c1; }
+  .card:nth-child(2) { grid-area: c2; }
+  .card:nth-child(3) { grid-area: c3; }
+  .card:nth-child(4) { grid-area: c4; }
+  .card:nth-child(5) { grid-area: c5; }
+  .card:nth-child(6) { grid-area: c6; }
+  .card:nth-child(7) { grid-area: c7; }
+  .card:nth-child(8) { grid-area: c8; }
+
+  /* Hover effect ONLY on large screens */
+  .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+  }
+}
