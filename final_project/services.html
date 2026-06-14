@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Plans | 6 Alert Investment Company</title>
+  <meta name="description" content="Compare 6 Alert Investment Company's structured investment plans, including minimum investment, expected returns, term, and risk level.">
+  <meta name="author" content="Rapheal Akwasi Agyapong">
+
+  <meta property="og:title" content="Investment Plans | 6 Alert Investment Company">
+  <meta property="og:description" content="Compare structured investment plans built for every step of your financial journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/company-logo.webp">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/company-logo.webp" alt="6 Alert Investment Company logo">
+        <span class="brand-text">
+          <strong>6 Alert</strong>
+          <span>INVESTMENT CO.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="icon-bars" aria-hidden="true">☰</span> Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner">
+      <div class="wrap">
+        <p class="eyebrow">Investment Plans</p>
+        <h1>Five steps, one path</h1>
+        <p>Every plan below sits on the same step path toward financial discipline. Compare minimum investment, estimated returns, term length, and risk level, then select "View plan details" for the full picture.</p>
+      </div>
+    </section>
+
+    <!-- ============ PLANS GRID ============ -->
+    <section class="section">
+      <div class="wrap">
+        <p class="loading-msg" id="loadingMsg">Loading investment plans&hellip;</p>
+        <div class="services-grid" id="servicesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="section cta-band">
+      <div class="wrap">
+        <h2>Not sure which plan fits?</h2>
+        <p>Tell us your goals and timeline, and an advisor will recommend a starting point &mdash; no obligation to commit.</p>
+        <a class="btn btn--navy" href="contact.html">Get a recommendation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ MODAL DIALOG ============ -->
+  <div class="modal-overlay" id="planModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <!-- content injected by js/services.js -->
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="images/company-logo.webp" alt="6 Alert Investment Company logo">
+        <p>"Every dream begins with a step of discipline." Structured investment plans for individuals and small businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="6 Alert on Facebook">f</a>
+          <a href="#" aria-label="6 Alert on X">x</a>
+          <a href="#" aria-label="6 Alert on LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Plans</h3>
+        <ul>
+          <li><a href="services.html">Starter Builder</a></li>
+          <li><a href="services.html">Growth Accelerator</a></li>
+          <li><a href="services.html">Premium Wealth</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Accra, Ghana</li>
+          <li>info@6alertinvestment.com</li>
+          <li>+233 20 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="year"></span> 6 Alert Investment Company | Site by Rapheal Akwasi Agyapong | Last updated <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

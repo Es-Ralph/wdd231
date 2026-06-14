@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | 6 Alert Investment Company</title>
+  <meta name="description" content="Send 6 Alert Investment Company your goals and timeline. An advisor will follow up with a plan recommendation based on your numbers.">
+  <meta name="author" content="Rapheal Akwasi Agyapong">
+
+  <meta property="og:title" content="Contact 6 Alert Investment Company">
+  <meta property="og:description" content="Tell us about your goals and we'll recommend a plan that fits.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/company-logo.webp">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/company-logo.webp" alt="6 Alert Investment Company logo">
+        <span class="brand-text">
+          <strong>6 Alert</strong>
+          <span>INVESTMENT CO.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="icon-bars" aria-hidden="true">☰</span> Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner">
+      <div class="wrap">
+        <p class="eyebrow">Get In Touch</p>
+        <h1>Let's plan your next step</h1>
+        <p>Share a few details about your goals, timeline, and the plan you're considering. An advisor will review your inquiry and follow up using your preferred contact method.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT LAYOUT ============ -->
+    <section class="section">
+      <div class="wrap contact-layout">
+        <div class="contact-info">
+          <h2>Reach us directly</h2>
+          <p>Prefer to talk first? Our team is available during business hours and typically responds to written inquiries within one business day.</p>
+          <ul>
+            <li><strong>Office</strong>Accra, Ghana</li>
+            <li><strong>Phone</strong>+233 20 000 0000</li>
+            <li><strong>Email</strong>info@6alertinvestment.com</li>
+            <li><strong>Hours</strong>Monday &ndash; Friday, 8:00am &ndash; 5:00pm GMT</li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h2>Investment Inquiry Form</h2>
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone number <span class="hint">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+
+            <div class="form-row">
+              <label for="interest">Investment plan you're interested in</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select a plan&hellip;</option>
+                <option value="Starter Builder Plan">Starter Builder Plan</option>
+                <option value="Education Fund Plan">Education Fund Plan</option>
+                <option value="Growth Accelerator Plan">Growth Accelerator Plan</option>
+                <option value="Business Growth Plan">Business Growth Plan</option>
+                <option value="Premium Wealth Plan">Premium Wealth Plan</option>
+                <option value="Not sure yet">Not sure yet &mdash; I'd like a recommendation</option>
+              </select>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="amount">Planned investment amount (USD)</label>
+              <input type="number" id="amount" name="amount" min="50" step="10" inputmode="numeric" required>
+              <p class="hint">Minimum $50.</p>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <fieldset id="contactMethodRow">
+              <legend>Preferred contact method</legend>
+              <div class="radio-row">
+                <input type="radio" id="contactEmail" name="contactMethod" value="Email" checked>
+                <label for="contactEmail">Email</label>
+              </div>
+              <div class="radio-row">
+                <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+                <label for="contactPhone">Phone</label>
+              </div>
+              <p class="error-text" role="alert"></p>
+            </fieldset>
+
+            <div class="form-row">
+              <label for="message">What would you like to know?</label>
+              <textarea id="message" name="message" required></textarea>
+              <p class="error-text" role="alert"></p>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="updates" name="updates">
+              <label for="updates">Send me occasional updates on new investment plans and financial literacy tips.</label>
+            </div>
+
+            <button type="submit" class="btn btn--gold btn--block">Submit inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="images/company-logo.webp" alt="6 Alert Investment Company logo">
+        <p>"Every dream begins with a step of discipline." Structured investment plans for individuals and small businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="6 Alert on Facebook">f</a>
+          <a href="#" aria-label="6 Alert on X">x</a>
+          <a href="#" aria-label="6 Alert on LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Plans</h3>
+        <ul>
+          <li><a href="services.html">Starter Builder</a></li>
+          <li><a href="services.html">Growth Accelerator</a></li>
+          <li><a href="services.html">Premium Wealth</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Accra, Ghana</li>
+          <li>info@6alertinvestment.com</li>
+          <li>+233 20 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="year"></span> 6 Alert Investment Company | Site by Rapheal Akwasi Agyapong | Last updated <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

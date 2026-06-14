@@ -1,0 +1,97 @@
+[
+  {
+    "id": "starter-builder",
+    "step": "Step One",
+    "name": "Starter Builder Plan",
+    "minInvestment": "$100",
+    "returnRange": "4% – 6% annually",
+    "term": "12 months, renewable",
+    "risk": "low",
+    "riskLabel": "Low Risk",
+    "idealFor": "Students and first-time investors",
+    "summary": "A low-barrier plan designed to build the habit of consistent saving and investing.",
+    "details": "The Starter Builder Plan is the easiest way to begin investing with very little capital. Funds are placed in stable, low-volatility instruments so new investors can experience steady growth while building confidence and a monthly contribution habit.",
+    "highlights": [
+      "Open with as little as $100",
+      "Add funds anytime with no penalty",
+      "Monthly statements in plain language",
+      "Free 30-minute onboarding session with an advisor"
+    ]
+  },
+  {
+    "id": "education-fund",
+    "step": "Step Two",
+    "name": "Education Fund Plan",
+    "minInvestment": "$50",
+    "returnRange": "3% – 5% annually",
+    "term": "Flexible, 6–24 months",
+    "risk": "low",
+    "riskLabel": "Low Risk",
+    "idealFor": "Students saving for tuition or training",
+    "summary": "A flexible, short-term plan built around school terms and tuition deadlines.",
+    "details": "The Education Fund Plan keeps savings accessible while still earning a modest return. Contribution schedules can be aligned to academic terms, and funds can be withdrawn ahead of tuition deadlines without losing accrued interest on completed periods.",
+    "highlights": [
+      "No long-term lock-in",
+      "Align withdrawals to school terms",
+      "Automatic reminders before deadlines",
+      "Available to full-time and part-time students"
+    ]
+  },
+  {
+    "id": "growth-accelerator",
+    "step": "Step Three",
+    "name": "Growth Accelerator Plan",
+    "minInvestment": "$1,000",
+    "returnRange": "8% – 12% annually",
+    "term": "24 months, renewable",
+    "risk": "moderate",
+    "riskLabel": "Moderate Risk",
+    "idealFor": "Young professionals with steady income",
+    "summary": "A diversified, mid-term plan for investors ready to grow consistent contributions.",
+    "details": "The Growth Accelerator Plan spreads contributions across a diversified mix of bonds, equities, and short-term funds. It suits investors who can commit to regular monthly contributions over a two-year horizon and want meaningfully higher growth than a savings account.",
+    "highlights": [
+      "Diversified across multiple asset types",
+      "Quarterly performance reviews with an advisor",
+      "Option to increase contributions at any review",
+      "Early withdrawal available with a reduced-return adjustment"
+    ]
+  },
+  {
+    "id": "business-growth",
+    "step": "Step Four",
+    "name": "Business Growth Plan",
+    "minInvestment": "$5,000",
+    "returnRange": "10% – 15% annually",
+    "term": "18 months, renewable",
+    "risk": "moderate",
+    "riskLabel": "Moderate–High Risk",
+    "idealFor": "Small business owners reinvesting profit",
+    "summary": "A working-capital plan that turns business profit into a structured growth fund.",
+    "details": "The Business Growth Plan is designed for owners who want to set aside a portion of monthly revenue into a managed fund rather than leaving it idle. Contributions can scale with revenue, and the plan includes guidance on balancing reinvestment in the business versus the fund.",
+    "highlights": [
+      "Variable contribution schedule tied to revenue",
+      "Dedicated advisor for business owners",
+      "Mid-term liquidity for equipment or expansion costs",
+      "Annual tax-season summary report"
+    ]
+  },
+  {
+    "id": "premium-wealth",
+    "step": "Step Five",
+    "name": "Premium Wealth Plan",
+    "minInvestment": "$10,000",
+    "returnRange": "12% – 18% annually",
+    "term": "36 months, renewable",
+    "risk": "high",
+    "riskLabel": "Higher Risk",
+    "idealFor": "Experienced investors and larger portfolios",
+    "summary": "An actively managed, higher-growth plan for compounding larger holdings.",
+    "details": "The Premium Wealth Plan is actively managed across a broader range of growth-oriented assets. It is intended for investors who understand and accept higher short-term volatility in exchange for a higher long-term growth target, and who do not need to access the funds within three years.",
+    "highlights": [
+      "Active management with monthly rebalancing",
+      "Priority access to a senior advisor",
+      "Annual in-person portfolio review",
+      "Reinvestment of returns by default, with opt-out"
+    ]
+  }
+]
